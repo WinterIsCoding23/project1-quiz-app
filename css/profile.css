@@ -24,12 +24,14 @@
     margin:30px 0 30px 30px;
 }
 
-.about-me h3 {    
+h3 {    
     font-size:40px;
+    margin:30px 0 30px 30px;
 }
 
-.about-me p {
+/*.about-me p {
 }
+*/
 
 .counters {
     display:flex;
@@ -38,21 +40,32 @@
 }
 
 .settings {
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    display: flex;    
+    justify-content: space-around;    
+    margin:30px 0 30px 30px;
 }
 
-.settings h3 {    
-    order:1;
-    font-size:40px;
-}
-
-.settings p {
-    order:2;
-}
-
+.settings p,
 .settings .button {
-    order:3;
+    align-self:center;
 }
+
+/*.settings .button {
+}
+*/
+
+.slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+
+@media screen and (prefers-color-scheme: dark) {
+    * {
+      color: rgb(255, 255, 255);
+      background-color: rgb(60, 120, 255);
+    }
+  }
 
