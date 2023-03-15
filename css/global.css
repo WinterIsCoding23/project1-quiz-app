@@ -12,23 +12,26 @@
 }
 
 #app-title {
-    position:relative;
-    display: flex;
-    justify-content: center;
-    align-content: center;
+    top:0;
+    height:10vh;
+    position:fixed;
     border:2px solid rgb(0, 0, 0);
-    /*background-color: aquamarine;*/    
+    /*background-color: aquamarine;*/ 
+    background-color: rgb(255, 255, 255);   
+    z-index: 2;
 }
 
 h1 {  
-    position: absolute;
-    padding:0px 50px;
+    padding:0px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding:20px;
     
-
 }
 
 main {
-      
+    bottom:100px; 
 }
 
 .card {
@@ -80,7 +83,7 @@ button:active {
 .tag-box li {   
     border:2px solid rgb(0, 0, 0);
     padding:10px;
-    margin:10px;
+    margin:10px auto;
 }
 
 #navigation {
