@@ -42,7 +42,7 @@ main {
     align-items: center;
     border:2px solid rgb(0, 0, 0);
     margin:40px auto;
-    width:60%;   
+    width:80%;   
     position:relative; 
 }
 
@@ -64,14 +64,8 @@ main {
 button {
     border:2px solid rgb(0, 0, 0);
     border-radius: 5px;
-    padding:15px 60px;
+    padding:15px;
     width:40%;
-}
-
-button p {
-    display: inline-block;
-    display: flex;
-    justify-content: center;
 }
 
 button:hover {
@@ -87,12 +81,16 @@ button:active {
     align-self: flex-start;    
     gap:10%; 
     list-style-type: none;    
-    margin:50px 10px;        
+    margin:50px 10px;  
+          
 }
 
 .tag-box li {   
+    background-color: rgb(200, 200, 200);
     border:2px solid rgb(0, 0, 0);
-    padding:10px;       
+    border-radius:5px;
+    padding:10px; 
+    font-size: smaller;      
 }
 
 #navigation {
