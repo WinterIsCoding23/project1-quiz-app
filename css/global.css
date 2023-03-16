@@ -1,9 +1,6 @@
-/* header, footer, etc. -> every styles used by all pages" */
-
-
 * {
     box-sizing: border-box;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     margin: 0;
     padding: 0;
@@ -65,8 +62,12 @@ button {
     border:2px solid rgb(0, 0, 0);
     border-radius: 5px;
     padding:15px;
-    width:40%;
+    width:40%;    
 }
+
+/*button p {
+    padding:10px 10px;    
+}*/
 
 button:hover {
     background-color: rgb(100, 100, 100);
@@ -81,8 +82,9 @@ button:active {
     align-self: flex-start;    
     gap:10%; 
     list-style-type: none;    
-    margin:50px 10px;  
-          
+    margin:50px 10px;   
+    width:100%;
+    flex-wrap: wrap;        
 }
 
 .tag-box li {   
@@ -90,7 +92,8 @@ button:active {
     border:2px solid rgb(0, 0, 0);
     border-radius:5px;
     padding:10px; 
-    font-size: smaller;      
+    font-size: smaller;    
+    margin-bottom:10px;
 }
 
 #navigation {
