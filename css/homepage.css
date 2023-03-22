@@ -2,3 +2,83 @@
     display:none;
     visibility: hidden;
 }
+
+h1 {  
+    color:rgb(255, 255, 255);
+    font-size:40px;
+    padding:20px 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding:20px;       
+}
+
+main {
+    position:relative;
+    top:50px;
+    padding:45px 0 100px 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:2px solid rgb(0, 0, 0);
+    margin:40px auto;
+    width:80%;   
+    position:relative; 
+}
+
+.card__question { 
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    padding:20px 50px;
+}
+
+.card__bookmark {
+    width:40px;
+    position:absolute;   
+    top: -7px;
+    right:0;
+    background-color: rgb(255, 255, 255);
+}
+
+button {
+    border:2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    padding:15px;
+    width:40%;    
+}
+
+/*button p {
+    padding:10px 10px;    
+}*/
+
+button:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+button:active {
+    background-color: rgb(200, 200, 200);
+}
+
+.card__tag-box {
+    display: flex;    
+    align-self: flex-start;    
+    gap:10%; 
+    list-style-type: none;    
+    margin:50px 10px;   
+    width:100%;
+    flex-wrap: wrap;        
+}
+
+.card__tag-box li {   
+    background-color: rgb(200, 200, 200);
+    border:2px solid rgb(0, 0, 0);
+    border-radius:5px;
+    padding:10px; 
+    font-size: smaller;    
+    margin-bottom:10px;
+}
