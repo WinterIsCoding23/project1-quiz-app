@@ -4,33 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/index.js" defer></script>
     <link rel="stylesheet" href="./styles.css">
     <title>Quiz-App</title>
     
 </head>
 <body>
-    <header id="app-title">
+    <header class="app__title">
         <h1>Quiz-App</h1>
     </header>
     <main>
-        <section class="profile-header">
+        <section class="profile__header">
             <img src="./images/koala.jpg" alt="Max Doe"/>
             <p>Max Doe</p>
         </section>
 
         <h3>About me</h3> 
-        <section class="about-me">                       
+        <section class="profile__about-me">                       
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum quasi sed nobis culpa, necessitatibus vero quia eius harum reiciendis similique! Voluptatem aliquam eos voluptas nam impedit magnam vero, rem dolores.                
             </p>
         </section>
 
-        <section class="counters">
-            <button type=button onClick="location.href='tbd" value='click here'></button>
-            <button type=button onClick="location.href='tbd" value='click here'></button>            
+        <section class="profile__counters">
+            <button type="button">Created questions</button>
+            <button type="button">Bookmarks</button>            
         </section>
 
         <h3>Settings</h3>
-        <section class="settings">            
+        <section class="profile__settings">            
             <p>Dark-Mode</p>
             <button>Button for Dark-Mode</button>
         </section>    
@@ -48,7 +49,7 @@
 
     </main>
 
-    <footer id="navigation">        
+    <footer class="app__navigation">        
         <a class="home" href="index.html" class="footer__link footer__link--active">
             <img src="./assets/home.png" alt="home" ></a>
         <a class="bookmarks" href="./bookmarks.html" class="footer__link">
