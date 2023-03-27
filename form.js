@@ -33,7 +33,7 @@ form.addEventListener("submit", (e) => {
     card.innerHTML = `
     <section class="card">
     <h2 class="card__question">${cardQuestionInput}</h2>
-    <img class="card__bookmark" src="./assets/bookmark_filled.png" alt="bookmark_filled" />
+    <img class="card__bookmark" src="./assets/bookmark.png" alt="bookmark" />
     <p>${cardShowAnswerInput}</p>          
         <ul class="card__tag-box">
             <li>${cardTagInput}</li>
@@ -41,14 +41,8 @@ form.addEventListener("submit", (e) => {
     </section>
     `;
 
-    // Clear input-fields (TODO!!!)
-    //console.log(card, cardQuestion, cardBookmark, cardShowAnswer, cardTag)
-
-    const cardContainer = document.querySelector("cardInput");
-    // console.log(cardInput);
-    // console.log(cardContainer);
-    cardContainer.innerHTML = "";
-
+    // Clear input-fields 
+    form.reset();    
 })
 
 

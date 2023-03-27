@@ -60,11 +60,59 @@ for (let i = 0; i < toggleBookmarks.length; i++) {
 }
   
 
-// answer button 
+// toggle answer button 
+// toggle answer only for first card:
+/*
+HTML:
+<button onclick="toggleAnswer()"
+JS:
+ function toggleAnswer() {
+ const answerParagraph = document.getElementById("answerParagraph");
+    const answerParagraph = document.getElementsById("answerParagraph");
+
+     if (answerParagraph.style.display === "none") {
+         answerParagraph.style.display = "block";
+     } else {
+         answerParagraph.style.display = "none";
+     }
+   }
+*/
 
 
+const answerButtons = document.querySelectorAll('[data-js="toggleButton"]');
+  const answerParagraphs = document.querySelectorAll('[data-js="answerParagraph"]');
+
+    //console.log(answerButtons);
+    //console.log(answerParagraphs);
+
+    for (let i = 0; i < answerButtons.length; i++) {
+        const answerButton = answerButtons[i];
+        answerButton.addEventListener("click", () => {
+            answerParagraphs[i].classList.toggle("card__button--hiddenAnswer");
+        });
+  }
+
+// toggleAttribute
 
 /*
+
+[...buttonsHTML].forEach((button, index) => {
+	button.addEventListener("click", (event)=> {
+	event.target;
+	console.log(event.target, index);
+}
+
+const answerButtons = document.querySelectorAll('[data-js="answerParagraph"]');
+
+answerButtons.forEach((element, index) => {
+    const answerButton = answerButtons[i];
+    answerButton.addEventListener("click", (event) => {
+        //event.target;
+        console.log(event.target, index);
+    });
+});
+
+
 When the user clicks on the button the previously hidden answer should be displayed
 
 When the user clicks this button again the answer is hidden again
