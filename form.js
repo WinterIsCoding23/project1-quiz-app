@@ -31,15 +31,15 @@ form.addEventListener("submit", (e) => {
     const cardTagInput = document.getElementById("tag").value;
     
     card.innerHTML = `
-    <section class="card">
-    <h2 class="card__question">${cardQuestionInput}</h2>
-    <img class="card__bookmark" src="./assets/bookmark.png" alt="bookmark" />
-    <p>${cardShowAnswerInput}</p>          
-        <ul class="card__tag-box">
-            <li>${cardTagInput}</li>
-        </ul>            
-    </section>
-    `;
+        <section class="card">
+        <h2 class="card__question">${cardQuestionInput}</h2>
+        <img class="card__bookmark" src="./assets/bookmark.png" alt="bookmark" />
+        <p>${cardShowAnswerInput}</p>          
+            <ul class="card__tag-box">
+                <li>${cardTagInput}</li>
+            </ul>            
+        </section>
+        `;
 
     // Clear input-fields 
     form.reset();    
@@ -66,7 +66,7 @@ form.addEventListener("submit", (e) => {
 
     questionTextAreaElement.addEventListener("input", () => {
         // Count number of typed characters
-        const questionTypedCharacters = questionTextAreaElement.value.length;
+        const questionTypedCharacters = 150-questionTextAreaElement.value.length;
 
         // Display number of typed characters
         questionTypedCharactersElement.textContent = questionTypedCharacters;
@@ -74,8 +74,9 @@ form.addEventListener("submit", (e) => {
 
     answerTextAreaElement.addEventListener("input", () => {
         // Count number of typed characters
-        const answerTypedCharacters = answerTextAreaElement.value.length;
+        const answerTypedCharacters = 150-answerTextAreaElement.value.length;
 
         // Display number of typed characters
         answerTypedCharactersElement.textContent = answerTypedCharacters;
+        //console.log(answerTypedCharactersElement.textContent)
     })

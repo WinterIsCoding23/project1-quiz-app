@@ -37,26 +37,6 @@ main {
     padding:20px 50px;
 }
 
-/*.card__button1--filled {
-
-}*/
-
-.card__bookmark1 {
-    width:40px;
-    position:absolute;   
-    top: -7px;
-    right:0;
-    background-color: rgb(255, 255, 255);
-}
-
-.card__bookmark1 img{
-    width:40px;
-}
-
-.card__button--hiddenAnswer {
-    display: none;
-}
-
 
 .card__bookmark {
     width:40px;
@@ -73,16 +53,18 @@ main {
     width:40%;    
 }
 
-/*button p {
-    padding:10px 10px;    
-}*/
-
 button:hover {
     background-color: rgb(100, 100, 100);
 }
 
 button:active {
     background-color: rgb(200, 200, 200);
+}
+
+.card__button--hiddenAnswer {
+    display: none;
+    border: 1px linear rgb(0, 0, 0);
+    color: darkgreen;
 }
 
 .card__tag-box {
@@ -103,3 +85,4 @@ button:active {
     font-size: smaller;    
     margin-bottom:10px;
 }
+

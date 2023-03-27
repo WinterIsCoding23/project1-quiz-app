@@ -5,7 +5,7 @@
 }
 
 body {
-    margin:0;
+    margin:100;
 }
 
 form {
@@ -29,4 +29,9 @@ form {
 #answer-count > span {
     font-size: 15px;
     font-weight: 100;
+}
+
+textarea:focus,
+input:focus {
+    background-color: rgb(255, 255, 0);
 }
