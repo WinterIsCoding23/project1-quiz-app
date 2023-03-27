@@ -6,7 +6,7 @@ form.addEventListener("submit", (e) => {
 
     const formData = new FormData(document.querySelector("form"));
     const data = Object.fromEntries(formData);
-    console.log(data);
+    //console.log(data);
 
     // Generate all DOM elements for a card with createElement()
     const card = document.createElement("section");  
@@ -42,13 +42,73 @@ form.addEventListener("submit", (e) => {
     `;
 
     // Clear input-fields (TODO!!!)
-    console.log(card, cardQuestion, cardBookmark, cardShowAnswer, cardTag)
+    //console.log(card, cardQuestion, cardBookmark, cardShowAnswer, cardTag)
 
     const cardContainer = document.querySelector("cardInput");
-    console.log(cardInput);
-    console.log(cardContainer);
+    // console.log(cardInput);
+    // console.log(cardContainer);
     cardContainer.innerHTML = "";
 
 })
 
 
+// Use the input event to read the length of a field's content and calculate and display the result
+// Think of ways to use the same logic for both form fields and to not repeat your code
+    
+    // Select textarea 
+    const questionTextAreaElement = document.querySelector("#question");
+    const answerTextAreaElement = document.querySelector("#answer");
+
+
+    // Select character counter 
+    const questionCharacterCounterElement = document.querySelector("#question-count");
+    const answerCharacterCounterElement = document.querySelector("#answer-count");
+
+
+    // Select element with typed characters
+    const questionTypedCharactersElement = document.querySelector("#current"); 
+    const answerTypedCharactersElement = document.querySelector("#currentAnswer"); 
+
+
+    questionTextAreaElement.addEventListener("input", () => {
+        // Count number of typed characters
+        const questionTypedCharacters = questionTextAreaElement.value.length;
+
+        // Display number of typed characters
+        questionTypedCharactersElement.textContent = questionTypedCharacters;
+    })
+
+    answerTextAreaElement.addEventListener("input", () => {
+        // Count number of typed characters
+        const answerTypedCharacters = answerTextAreaElement.value.length;
+
+        // Display number of typed characters
+        answerTypedCharactersElement.textContent = answerTypedCharacters;
+    })
+
+   
+
+
+
+
+/*
+$('textarea').keyup(function() {
+    
+    var characterCount = $(this).val().length,
+        current = $('#current'),
+        maximum = $('#maximum'),
+        theCount = $('#the-count');
+      
+    current.text(characterCount);
+
+
+const textArea = document.querySelector('[data-js="textarea"]');
+const counter = document.querySelector('[data-js="counter"]');
+console.log(textArea, counter);
+
+
+const typedCharactersElement = document.querySelector("#typed-characters");
+    typedCharacters.textContent = document.querySelector("current");
+
+
+    */

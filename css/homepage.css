@@ -53,8 +53,8 @@ main {
     width:40px;
 }
 
-.card__bookmark1--hidden {
-    background-color: black;
+.card__button--hiddenAnswer {
+    display: none;
 }
 
 

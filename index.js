@@ -45,7 +45,7 @@ for (let i = 0; i < toggleBookmarks.length; i++) {
     const toggleBookmark = toggleBookmarks[i];
 
     toggleBookmark.addEventListener("click", ()=> {
-        console.log("hallo");
+        //console.log("hallo");
         console.log(toggleBookmark);
         // toggleBookmark.src="./assets/bookmark_filled.png";
         console.log(toggleBookmark.src.includes('filled'));
@@ -57,13 +57,13 @@ for (let i = 0; i < toggleBookmarks.length; i++) {
             toggleBookmark.src="./assets/bookmark_filled.png";
         }    
     });
-    
 }
-
-
   
 
 // answer button 
+
+
+
 /*
 When the user clicks on the button the previously hidden answer should be displayed
 

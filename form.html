@@ -16,16 +16,16 @@
     <main>
     <form>
         <label for="question">Your question:</label>
-        <textarea name="question" id="question" maxlength="150"></textarea>
-        <div id="question-count">
+        <textarea name="question" id="question" maxlength="150" data-js="textarea" required></textarea>
+        <div id="question-count" data-js="counter">
             <span id="current">0</span>
             <span id="maximum">/ 150</span>
           </div>
 
         <label for="answer">Your answer:</label>
-        <textarea name="answer" id="answer" maxlength="150"></textarea>  
-        <div id="answer-count">
-            <span id="current">0</span>
+        <textarea name="answer" id="answer" maxlength="150" data-js="textarea" required></textarea>  
+        <div id="answer-count" data-js="counter">
+            <span id="currentAnswer">0</span>
             <span id="maximum">/ 150</span>
           </div>
 
