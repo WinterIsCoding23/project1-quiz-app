@@ -79,30 +79,3 @@ form.addEventListener("submit", (e) => {
         // Display number of typed characters
         answerTypedCharactersElement.textContent = answerTypedCharacters;
     })
-
-   
-
-
-
-
-/*
-$('textarea').keyup(function() {
-    
-    var characterCount = $(this).val().length,
-        current = $('#current'),
-        maximum = $('#maximum'),
-        theCount = $('#the-count');
-      
-    current.text(characterCount);
-
-
-const textArea = document.querySelector('[data-js="textarea"]');
-const counter = document.querySelector('[data-js="counter"]');
-console.log(textArea, counter);
-
-
-const typedCharactersElement = document.querySelector("#typed-characters");
-    typedCharacters.textContent = document.querySelector("current");
-
-
-    */
