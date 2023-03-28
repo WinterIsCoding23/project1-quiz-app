@@ -11,7 +11,8 @@ form.addEventListener("submit", (e) => {
     // Generate all DOM elements for a card with createElement()
     const card = document.createElement("section");  
     const cardQuestion = document.createElement("h2");
-    const cardBookmark = document.createElement("img");  
+    const cardBookmark = document.createElement("img"); 
+    const cardButton = document.createElement ("button"); 
     const cardShowAnswer = document.createElement("p");  
     const cardTagList = document.createElement("ul");  
     const cardTag = document.createElement("li"); 
@@ -29,6 +30,17 @@ form.addEventListener("submit", (e) => {
     const cardQuestionInput = document.getElementById("question").value;
     const cardShowAnswerInput = document.getElementById("answer").value;
     const cardTagInput = document.getElementById("tag").value;
+
+    /*
+    // classList.add
+    card.classList.add("card");
+    cardQuestion.classList.add("card__question");
+    cardBookmark.classList.add("card__bookmark");
+    cardButton.classList.add("card__button");
+    cardShowAnswer.classList.add("card__button--hiddenAnswer");
+    cardTagList.classList.add("card__tag-box");
+    */
+    
     
     card.innerHTML = `
         <section class="card">
@@ -42,7 +54,8 @@ form.addEventListener("submit", (e) => {
         `;
 
     // Clear input-fields 
-    form.reset();    
+    form.reset();  
+      
 })
 
 
