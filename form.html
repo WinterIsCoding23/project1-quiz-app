@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./form.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <header class="app__title">
+        <h1>Quiz-App</h1>
+    </header>
+
+    <main>
+    <form>
+        <label for="question">Your question:</label>
+        <textarea name="question" id="question" maxlength="150" data-js="textarea" placeholder="Start typing here..." required></textarea>
+        <div id="question-count" data-js="counter">
+            <span id="current">150</span>
+            <span id="maximum">characters left</span>
+          </div>
+
+        <label for="answer">Your answer:</label>
+        <textarea name="answer" id="answer" maxlength="150" data-js="textarea" placeholder="Start typing here..." required></textarea>  
+        <div id="answer-count" data-js="counter">
+            <span id="currentAnswer">150</span>
+            <span id="maximum">characters left</span>
+          </div>
+
+        <label for="question">Tag:</label>
+        <input type="text" name="tag" id="tag" value="#" placeholder="Start typing here..." required>
+        <button type="submit" data-js="submit-button">Submit</button>
+    </form>
+    </main>
+  
+    <footer class="app__navigation">        
+        <a href="homepage.html" class="footer__link footer__link--active">
+            <img src="./assets/home.png" alt="home" ></a>
+        <a href="./bookmarks.html" class="footer__link">
+            <img src="./assets/bookmark_transparent.png" alt="bookmark_transparent" >
+        </a>
+        <a href="form.html" class="footer__link">
+            <img src="./assets/add_filled.png" alt="home" >
+        </a>   
+        <a href="profile.html" class="footer__link">
+            <img src="./assets/profile.png" alt="home" >
+        </a>         
+              
+    </footer>
+</body>
+</html>
+
+
+
+<!-- 
+The form fields for question and answer should be limited to a text of 150 characters. While typing users should be informed about the amount of characters left.
+    
+    Add a display below the form fields to show the amount of characters
+    Use the input event to read the length of a field's content and calculate and display the result
+    Think of ways to use the same logic for both form fields and to not repeat your code -->
+

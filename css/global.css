@@ -9,11 +9,15 @@
 .app__title {
     top:0;
     position:fixed;
-    border:2px solid rgb(0, 0, 0);
-    /*background-color: aquamarine;*/ 
-    background-color: rgb(51, 162, 23);   
+    /*border:2px solid rgb(0, 0, 0);*/
+    background-color: rgb(255, 255, 255);    
+    background-image: linear-gradient(360deg, rgba(5, 52, 35, 0), rgb(51, 162, 23)); 
     z-index: 2;
     width:100%; 
+}
+
+.app__title > h1 {
+    color: rgb(0, 0, 0);
 }
 
 .app__navigation {
@@ -22,17 +26,25 @@
     justify-content: space-around;    
     
     position:fixed;
-    border:2px solid rgb(0, 0, 0);
+    /*border:2px solid rgb(0, 0, 0);*/
 
     bottom:0;
     width: 100%;
     z-index: 2;
     
     background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(180deg, rgba(5, 52, 35, 0), rgb(51, 162, 23)); 
 }
 
 .app__navigation img {
     height: 80px;
     padding: 20px 20px;        
 }
+
+@media screen and (prefers-color-scheme: dark) {
+    * {
+      color: rgb(255, 255, 255);
+      background-color: rgb(60, 120, 255);
+    }
+  }
 
